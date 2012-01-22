@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	    <meta name="author" content="Tim Holman">
+	    <meta name="description" content="CSS3 and Javascript metro style tiles.">
+	    
+		<script src="js/tile.js" type="text/javascript"></script>
+    	<title> HTML + CSS3: Metro Tiles </title>
+    	
+    	<script>
+			window.onload = function() {
+				Tile("1");
+				Tile("2");
+				Tile("3");
+				Tile("4");
+				Tile("5");
+				Tile("6");
+				Tile("7");
+				Tile("8");
+				Tile("9");
+			}
+		</script>
+		
+		
+	</head>
+	
+	<body>
+		<header>
+			<h1> HTML + CSS3: Metro Tiles </h1>
+		</header>
+		
+		<div id="info">
+			A simple implementation of windows metro tiles: Clicking will tilt them based on the click location, just like on a windows phone!<br>
+			{3D CSS Transformations currently will only work with a webkit browser}
+		</div>
+		<div id="wrapper">
+			
+			<div class="blue-tile" id="1"><p>A</p></div>
+			<div class="blue-tile" id="2"><p>B</p></div>
+			<div class="blue-tile" id="3"><p>C</p></div>
+			
+			<br>
+			
+			<div class="green-tile" id="4"><p>D</p></div>
+			<div class="green-tile" id="5"><p>E</p></div>
+			<div class="green-tile" id="6"><p>F</p></div>
+			
+			<br>
+			
+			<div class="orange-tile" id="7"><p>G</p></div>
+			<div class="orange-tile" id="8"><p>H</p></div>
+			<div class="orange-tile" id="9"><p>:)</p></div>
+			
+			<br>
+			
+		</div>
+		
+		<footer>
+			<div id="sharing">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="twholman">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				<g:plusone annotation="inline" width="100px" height="23px"></g:plusone>
+			</div>
+			CSS Metro Style Tiles by <a href="http://tholman.com">Tim Holman</a> | Twitter: <a href="http://twitter.com/twholman">@twholman</a><br>
+		</footer>
+	</body>
+</html>

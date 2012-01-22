@@ -1,0 +1,103 @@
+/*
+// Tile.js - Css3 windows metro tiles
+// Author    : Tim Holman
+// @Author   : @twholman
+// WWWAuthor : http://tholman.com
+//
+// -- None of this css is required, its just for the demo ;)
+*/
+
+header
+{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 25px;	
+}
+
+#info
+{
+	font-size: 18px;
+	color: #555;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+a{
+	color: #074E8C;
+}
+
+#wrapper
+{
+	text-align: center;
+	width: 500px;
+	margin: auto;
+}
+
+
+
+.blue-tile
+{
+	background-color: #4D91C2;
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);	
+}
+
+p
+{
+	cursor: default;
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 100px;
+	color: white;
+	padding-top: 7px;
+	-webkit-user-select: none;
+	margin: auto;
+}
+
+.green-tile
+{
+	background-color: #8ACF5A;
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+	
+}
+
+.orange-tile
+{
+	background-color: #E77C2C;
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);	
+}
+
+footer
+{
+	padding-top: 30px;
+	position: relative;
+	height: 60px;
+	clear: both;
+	color: #444;
+	text-align: center;
+}
+
+footer a
+{
+	color: #0D8AA3;
+	text-decoration: none;
+}
+
+footer a:hover
+{
+	text-decoration: underline;
+}
