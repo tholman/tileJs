@@ -1,103 +1,70 @@
 /*
-// Tile.js - Css3 windows metro tiles
-// Author    : Tim Holman
-// @Author   : @twholman
-// WWWAuthor : http://tholman.com
-//
-// -- None of this css is required, its just for the demo ;)
-*/
+ * Metro-tiles:  Css3 windows metro tiles
+ * Author     :  Tim Holman
+ * @Author    :  @twholman
+ * -- None of this css is required, its just for the demo ;)
+ */
 
-header
-{
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	font-size: 25px;	
-}
+ body {
+ 	margin: 0px;
+ 	background:#eee url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAAHElEQVQIHWP48+fP9+/f////zwCkgBwQC4ghAACODRqkCkEF0QAAAABJRU5ErkJggg==) repeat;
+ 	font-family:'Lato', Helvetica, sans-serif;
+ 	line-height: 28px;
+	font-size: 16px;
+	color: #333;
+	font-weight: lighter;
+ }
 
-#info
-{
-	font-size: 18px;
-	color: #555;
-	text-align: center;
-	margin-bottom: 25px;
-}
+ #contents {
+ 	float: left;
+ 	padding-top: 25px;
+ 	padding-bottom: 25px;
+ 	padding-left: 35px;
+ 	padding-right: 35px;
 
-a{
-	color: #074E8C;
-}
-
-#wrapper
-{
-	text-align: center;
-	width: 500px;
-	margin: auto;
-}
-
-
-
-.blue-tile
-{
-	background-color: #4D91C2;
-	width: 150px;
-	height: 150px;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);	
-}
-
-p
-{
-	cursor: default;
-	font-family: 'Lobster', cursive;
-	text-align: center;
-	font-size: 100px;
-	color: white;
-	padding-top: 7px;
-	-webkit-user-select: none;
-	margin: auto;
-}
-
-.green-tile
-{
-	background-color: #8ACF5A;
-	width: 150px;
-	height: 150px;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-	
-}
-
-.orange-tile
-{
-	background-color: #E77C2C;
-	width: 150px;
-	height: 150px;
-	float: left;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);	
-}
-
-footer
-{
-	padding-top: 30px;
+	width: 720px;
+	box-shadow: 0px 0px 20px -8px #999;
+	border-left: 8px solid greenYellow;
+	background-color: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	left: 50%;
 	position: relative;
-	height: 60px;
-	clear: both;
-	color: #444;
-	text-align: center;
-}
+	margin-left: -360px;
+ }
 
-footer a
-{
-	color: #0D8AA3;
-	text-decoration: none;
-}
+ header {
+ 	margin-bottom: 30px;
+ 	margin-top: 5px;
+ }
 
-footer a:hover
-{
-	text-decoration: underline;
-}
+ h1 {
+ 	font-weight: normal;
+ 	text-align: center;
+ }
+
+ p a {
+ 	font-weight: normal;
+ 	text-decoration: none;
+ 	color: #111;
+ 	border-bottom: 1px dotted #111;
+ }
+
+ p a:hover {
+ 	color: deepPink;
+ 	border-bottom: 1px dotted deepPink;
+ }
+
+/* #downloads {
+ 	text-align: center;
+ 	float: left;
+ }
+
+ #downloads a {
+ 	background-color: deepPink;
+ 	
+ 	width: 140px;
+ 	height: 50px;
+ 	display: inline-block;
+
+ }*/

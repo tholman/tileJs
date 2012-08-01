@@ -1,68 +1,110 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+    	<!-- META -->
+		<title> Javascript + HTML + CSS3: Windows Metro Tiles </title>
+    	<meta name="author" content="Tim Holman">
+	    <meta name="description" content="Javascript + HTML + CSS3: Windows Metro Tiles">
+
+    	<!-- CSS (not required to use tile-js, just used in my demo ) -->
+    	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet" type="text/css">
     	<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	    <meta name="author" content="Tim Holman">
-	    <meta name="description" content="CSS3 and Javascript metro style tiles.">
-	    
-		<script src="js/tile.js" type="text/javascript"></script>
-    	<title> HTML + CSS3: Metro Tiles </title>
-    	
-    	<script>
-			window.onload = function() {
-				Tile("1");
-				Tile("2");
-				Tile("3");
-				Tile("4");
-				Tile("5");
-				Tile("6");
-				Tile("7");
-				Tile("8");
-				Tile("9");
-			}
+
+	    <!-- JS -->
+	    <script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-22825241-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
 		</script>
-		
-		
+
+    	<!-- MISC -->
+
 	</head>
 	
 	<body>
-		<header>
-			<h1> HTML + CSS3: Metro Tiles </h1>
-		</header>
-		
-		<div id="info">
-			A simple implementation of windows metro tiles: Clicking will tilt them based on the click location, just like on a windows phone!<br>
-			{3D CSS Transformations currently will only work with a webkit browser}
-		</div>
-		<div id="wrapper">
-			
-			<div class="blue-tile" id="1"><p>A</p></div>
-			<div class="blue-tile" id="2"><p>B</p></div>
-			<div class="blue-tile" id="3"><p>C</p></div>
-			
-			<br>
-			
-			<div class="green-tile" id="4"><p>D</p></div>
-			<div class="green-tile" id="5"><p>E</p></div>
-			<div class="green-tile" id="6"><p>F</p></div>
-			
-			<br>
-			
-			<div class="orange-tile" id="7"><p>G</p></div>
-			<div class="orange-tile" id="8"><p>H</p></div>
-			<div class="orange-tile" id="9"><p>:)</p></div>
-			
-			<br>
-			
-		</div>
-		
-		<footer>
-			<div id="sharing">
-				<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="twholman">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-				<g:plusone annotation="inline" width="100px" height="23px"></g:plusone>
+
+		<div id="container">
+
+			<div id="contents">
+				<header>
+					<h1> TileJs: Metro tiles with HTML, Javascript and CSS3 </h1>
+				</header>
+
+				<!-- Info about metro tiles -->
+				<p>
+					<b> What: </b>  TileJs brings the (lovable?) subtle effects of windows 8 tiles to the web, with css3 and a touch of javascript.
+					What are these subtle effects, I hear you ask? Well, more or less its just a slight tilting of the metro tiles when you click, leaning towards the edge closest to your cursor (of finger!) or, if you click in the center, the slight depression of the tile into the screen.
+				</p>
+
+				<p>
+					<b> Why: </b>  Because these subtle effects are what can make or break an app... perhaps most people won't notice them, but some will... and it will make them smile :)
+				</p>
+
+				<p>
+					<b> How: </b>  Using tileJs is easy! The source is open source on github: <a href="http://github.com/tholman/tileJs"> here </a> so you can easily download the tileJs script (or the minified version) and get started! All you need to do is add <i style="font-weight: normal;">"metro-tile"</i> to the class of you tile-to-be elements, and include the script at the bottom of the page! There's no jquery, or css required either ;)
+				</p>
+
+				<p> <b> Demo: </b>  Just click the tiles, and see that sleek tilting action!</p>
+
+				<div id="metro-array" style="display: inline-block;">
+
+
+					<!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
+					<!-- The only important thing is class="metro-tile" -->
+					<div style="width: 230px; height: 230px; float: left; ">
+
+						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+							You can
+						</a>
+
+						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff;">
+							put
+						</a>
+					</div>
+
+					<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
+
+						<a class="metro-tile" href="http://google.com" style="cursor: pointer; width: 230px; height: 230px; display: block; background-color: deepSkyBlue; color: #fff">
+							anything you want
+						</a>
+
+					</div>
+
+					<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
+
+						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+							in
+						</a>
+
+						<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; margin-right: 10px; display: block; float: left; background-color: deepSkyBlue; color: #fff;">
+							these
+						</a>
+
+						<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; display: block; background-color: deepSkyBlue; float: right; color: #fff;">
+							tiles
+						</a>
+					</div>
+
+				</div>
+
+				<p style="float: left" >
+					<b> Who: </b> You! No... ME! I'm Tim, an Australian interactive developer, living busy New York. I love to tinker and play with Javascript, css and any new technology. You can see my experiments: <a href="http://tholman.com"> here </a> or reach out to me on twitter: <a href="http://twitter.com/twholman"> @twholman </a>
+				</p>
+
 			</div>
-			CSS Metro Style Tiles by <a href="http://tholman.com">Tim Holman</a> | Twitter: <a href="http://twitter.com/twholman">@twholman</a><br>
-		</footer>
+		</div>
+
+		<!-- Including TileJs... YAY! -->
+		<script src="js/tileJs.js" type="text/javascript"></script>
+
 	</body>
 </html>
