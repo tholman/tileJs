@@ -41,6 +41,9 @@ function Tile( element ){
 		// This gives an antialiased effect for transforms in firefox.
 		tile.style.outline = "1px solid transparent";
 
+		// Font smoothing for webkit.
+		tile.style.webkitFontSmoothing = "antialiased";
+
 		// Listen to mouse events for the tile.
 		tile.addEventListener('mousedown', MouseDown, false);
 		
