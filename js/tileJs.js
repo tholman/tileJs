@@ -38,6 +38,7 @@ function Tile( element ){
 		tile.style.oTransition = "-o-transform 0.08s";
 		tile.style.transition = "transform 0.08s";
 
+		// This gives an antialiased effect for transforms in firefox.
 		tile.style.outline = "1px solid transparent";
 
 		// Listen to mouse events for the tile.
