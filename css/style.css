@@ -55,6 +55,12 @@
  	border-bottom: 1px dotted deepPink;
  }
 
+ #metro-array a {
+ 	text-indent: 5px;
+ 	font-weight: normal;
+ 	text-transform: uppercase;
+ }
+
  #downloads {
  	text-align: center;
  	float: left;
