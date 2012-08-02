@@ -59,22 +59,38 @@
  	border-bottom: 1px dotted deepPink;
  }
 
- #metro-array a {
+ .back-link {
+ 	width: 50px;
+	height: 40px;
+	background-color: white;
+	position: absolute;
+	top: 10px;
+	display: block;
+	left: 10px;
+	font-size: 50px;
+	line-height: 38px;
+	text-decoration: none;
+	box-shadow: 0px 0px 20px -8px #333;
+	color: deepPink;
+	border-radius: 3px;
+ }
+
+ .back-link:hover {
+ 	background-color: deeppink;
+ 	color: #fff;
+ }
+
+ #metro-array a,  #downloads a {
  	text-indent: 5px;
  	font-weight: normal;
  	text-transform: uppercase;
  }
 
  #downloads {
- 	text-align: center;
- 	float: left;
  }
 
  #downloads a {
- 	background-color: deepPink;
- 	
- 	width: 140px;
- 	height: 50px;
- 	display: inline-block;
-
+ 	color: #222;
+ 	font-weight: normal;
+	
  }

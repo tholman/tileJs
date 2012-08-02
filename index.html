@@ -32,79 +32,80 @@
 	
 	<body>
 
+		<a href="https://github.com/tholman/tilejs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+		<a class="back-link" href="http://tholman.com" style=""> &larr; </a>
+
 		<div id="container">
 
 			<div id="contents">
-				<header>
-					<h1> TileJs: Metro tiles with HTML, Javascript and CSS3 </h1>
-				</header>
 
-				<!-- Info about metro tiles -->
-				<p>
-					<b> What: </b>  TileJs brings the (lovable?) subtle effects of windows 8 tiles to the web, with css3 and a touch of javascript.
-					What are these subtle effects, I hear you ask? Well, more or less its just a slight tilting of the metro tiles when you click, leaning towards the edge closest to your cursor (of finger!) or, if you click in the center, the slight depression of the tile into the screen.
-				</p>
+				<div id="post">
+					<header>
+						<h1> Windows Metro tiles with Javascript and CSS3 </h1>
+					</header>
 
-				<p>
-					<b> Why: </b>  Because these subtle effects are what can make or break an app... perhaps most people won't notice them, but some will... and it will make them smile :)
-				</p>
+					<!-- Info about metro tiles -->
+					<p>
+						<b> What: </b>  TileJs brings the (lovable?) subtle effects of windows 8 tiles to the web, with css3 and a touch of javascript.
+						What are these subtle effects, I hear you ask? Well, more or less its just a slight tilting of the metro tiles when you click, leaning towards the edge closest to your cursor (of finger!) or, if you click in the center, the slight depression of the tile into the screen.
+					</p>
 
-				<p>
-					<b> How: </b>  Using tileJs is easy! The source is open source on github: <a href="http://github.com/tholman/tileJs"> here </a> so you can easily download the tileJs script (or the minified version) and get started! All you need to do is add <i style="font-weight: normal;">"metro-tile"</i> to the class of you tile-to-be elements, and include the script at the bottom of the page! There's no jquery, or css required either ;)
-				</p>
+					<p>
+						<b> Why: </b>  Because these subtle effects are what make websites great!... perhaps most people won't notice them, but some will... and it will make them smile :)
+					</p>
 
-				<p> <b> Demo: </b>  Just click the tiles, and see that sleek tilting action!</p>
+					<p> <b> Demo: </b>  Just click the tiles, and see that sleek tilting action!</p>
 
-				<div id="metro-array" style="display: inline-block;">
+					<div id="metro-array" style="display: inline-block;">
 
 
-					<!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
-					<!-- The only important thing is class="metro-tile" -->
-					<div style="width: 230px; height: 230px; float: left; ">
+						<!-- Simple grid for the demo! None of these styles are required, thats just how I've styled my tiles -->
+						<!-- The only important thing is class="metro-tile" -->
+						<div style="width: 230px; height: 230px; float: left; ">
 
-						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
-							You can
-						</a>
+							<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+								You can
+							</a>
 
-						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff;">
-							put
-						</a>
+							<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff;">
+								put
+							</a>
+						</div>
+
+						<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
+
+							<a class="metro-tile" style="cursor: pointer; width: 230px; height: 230px; display: block; background-color: deepSkyBlue; color: #fff">
+								anything you want
+							</a>
+
+						</div>
+
+						<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
+
+							<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
+								in
+							</a>
+
+							<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; margin-right: 10px; display: block; float: left; background-color: deepSkyBlue; color: #fff;">
+								these
+							</a>
+
+							<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; display: block; background-color: deepSkyBlue; float: right; color: #fff;">
+								tiles
+							</a>
+						</div>
+
 					</div>
 
-					<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
+					<p>
+						<b> How: </b>  Using tileJs is easy! The code is open source on  <a href="http://github.com/tholman/tileJs"> github </a>, so you can easily download the tileJs script (or the minified version) and get started! All you need to do is add <i style="font-weight: normal;">"metro-tile"</i> to the class of you tile-to-be elements, and include the script at the bottom of the page! There's no jquery, or css required either!! There's a more detailed, step by step guide on github: <a href="http://github.com/tholman/tileJs"> here </a>
+					</p>
 
-						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 230px; display: block; background-color: deepSkyBlue; color: #fff">
-							anything you want
-						</a>
-
-					</div>
-
-					<div style="width: 230px; height: 230px; float: left; margin-left: 10px">
-
-						<a class="metro-tile" style="cursor: pointer; width: 230px; height: 110px; display: block; background-color: deepSkyBlue; color: #fff; margin-bottom: 10px;">
-							in
-						</a>
-
-						<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; margin-right: 10px; display: block; float: left; background-color: deepSkyBlue; color: #fff;">
-							these
-						</a>
-
-						<a class="metro-tile" style="cursor: pointer; width: 110px; height: 110px; display: block; background-color: deepSkyBlue; float: right; color: #fff;">
-							tiles
-						</a>
-					</div>
-
+					<p>
+						<b> Who: </b> You! No... ME! I'm Tim, an Australian interactive developer, living busy New York. I love to tinker and play with Javascript, css and any new technology. You can see my <a href="http://tholman.com"> experiments </a>, <a href="http://tholman.com"> blog </a> or reach out to me on twitter: <a href="http://twitter.com/twholman"> @twholman </a>
+					</p>
 				</div>
-
-				<p style="float: left" >
-					<b> Who: </b> You! No... ME! I'm Tim, an Australian interactive developer, living busy New York. I love to tinker and play with Javascript, css and any new technology. You can see my <a href="http://tholman.com"> experiments </a>, <a href="http://tholman.com"> blog </a> or reach out to me on twitter: <a href="http://twitter.com/twholman"> @twholman </a>
-				</p>
-
-<!-- 				<div id="downloads">
-					<b> Get tileJs: </b>
- 					<a class="metro-tile" href="js/tileJs.min.js" target="_blank"> Download tileJs </a>
-					<a class="metro-tile" href="http://github.com/tholman/tileJs" > tileJs on Github </a> 
-				</div> -->
 
 			</div>
 		</div>
