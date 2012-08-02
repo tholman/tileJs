@@ -1,23 +1,22 @@
-# tile.js
+# tileJs
 
-* A Simple javascript replication of windows tile interactions (tilting)
+A Simple javascript replication of the subtle tilting effect when you click a tile in windows 8. Tilejs uses css3 transforms, so it is only supported by modern browsers.
 
-* Note that this requires a browser with support for CSS 3D transforms (Currently only webkit).
+## Usage
 
-* In the future, I plan to add support for other browsers (as they come to support 3d transforms), as well as some graceful degredation for older browsers.
+```html
+<!-- Include the "metro-tile" class in your element -->
+<div class="metro-tile"> This is my div, styled however I like </div>
 
-# Example
+<!-- Include the tileJs script -->
+<script src="js/tileJs.js" type="text/javascript"></script>
+
+<!-- Thats all! -->
+```
+
+## Browsers
+* tileJS should work in all browsers that support css3 transforms (firefox 10+, chrome 12+, ie 10+, Safari 4+), to check your browser support, check caniuse: [here](http://caniuse.com/transforms3d "Can I use 3d transforms") 
+
+## In the wild
 
 * http://tholman.com/projects/tile-js/
-
-# Usage
-
-```
-<script src="js/tile.js" type="text/javascript"></script>
-
-<script>
-	window.onload = function() {
-		Tile("divId");
-	}
-</script>
-```
