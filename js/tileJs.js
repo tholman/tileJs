@@ -119,10 +119,19 @@ function Tile( element ){
 	
 	var MouseDown = function( event ){
 
-		var x = event.offsetX || ( event.layerX - tile.offsetLeft );
-		var y = event.offsetY || ( event.layerY - tile.offsetTop  ); 
+		// Chrome
+		if ( event.offsetX ) {
+			pushTile( event.offsetX, event.offsetY );
+			return;
+		}
 
+		// Non offsetX browsers
+		var tilePosition = elementPosition( tile );
+		var x = event.pageX - tilePosition.x;
+		var y = event.pageY - tilePosition.y;
+		
 		pushTile( x, y );
+		
 	};
 	
 
@@ -137,8 +146,34 @@ function Tile( element ){
 
 		document.removeEventListener('mouseup',   MouseUp,   false);
 	};
-	
 
+	// Element position finding for non webkit browsers.
+	// How will this perform on mobile?
+	var getNumericStyleProperty = function(style, prop){
+    	return parseInt(style.getPropertyValue(prop),10) ;
+	}
+
+	var elementPosition = function( e ){
+		var x = 0, y = 0;
+	    var inner = true ;
+	    do {
+	        x += e.offsetLeft;
+	        y += e.offsetTop;
+	        var style = getComputedStyle(e,null) ;
+	        var borderTop = getNumericStyleProperty(style,"border-top-width") ;
+	        var borderLeft = getNumericStyleProperty(style,"border-left-width") ;
+	        y += borderTop ;
+	        x += borderLeft ;
+	        if (inner){
+	          var paddingTop = getNumericStyleProperty(style,"padding-top") ;
+	          var paddingLeft = getNumericStyleProperty(style,"padding-left") ;
+	          y += paddingTop ;
+	          x += paddingLeft ;
+	        }
+	        inner = false ;
+	    } while (e = e.offsetParent);
+	    return { x: x, y: y };
+	}
 	
 	// Initialize the tile.
 	initialize();
