@@ -12,7 +12,7 @@ function Tile( element ){
 	// Global settings
 
 	// Declare css for when the tile is in its idle state.
-    var idleCss = "rotateX( 0deg ) rotateY( 0deg ) translateZ( 0px )";
+    var idleCss = "perspective( 800px ) rotateX( 0deg ) rotateY( 0deg ) translateZ( 0px )";
 
 
 	var initialize = function() {
